@@ -1,0 +1,33 @@
+        <div id="login" class="modal hide fade" aria-hidden="true" style="width:360px;">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal">×</a>
+                <h3 align="center">登陆</h3>
+            </div>
+            <div class="modal-body">
+                <form class="pure-form pure-form-stacked" method="post" action="/test">
+                    <fieldset>
+                        <label for="usr">用户名：</label>
+                        <input id="usr" name="usr" type="text" class="pure-input-1" placeholder="请输入用户名">
+
+                        <label for="passwd">密码：</label>
+                        <input id="passwd" name="passwd" type="password" class="pure-input-1" placeholder="请输入密码">
+
+                        <div class="pure-g" style="margin-top: 10px;">
+                            <div class="pure-u-1-2" style="padding-top: 8px;">
+                                <input id="remember" name="remember" type="checkbox"> 记住我
+                            </div>
+                            <div class="pure-u-1-2">
+                                <button style="float: right;" type="submit" class="pure-button pure-button-primary">登录</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="modal-footer">
+                @ooz blog&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+                <a href="/reset">忘记密码</a>
+            </div>
+        </div>
+        <!-- javascript -->
+        <script src="/static/js/jquery.min.js"></script>
+        <script src="/static/js/bootstrap/modal.js"></script>

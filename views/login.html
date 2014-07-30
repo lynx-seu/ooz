@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
+    <title>{{.Title}}</title>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+    <!--<![endif]-->
+
+    <style type="text/css">
+    <!--
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url("/static/img/login_bg.jpg");
+/*            background-size: 100%, 100%;
+            background-size: cover; 
+            -ms-behavior: url(/static/img/bg.jpg);
+*/        }
+        .login_form {
+            padding: 30px;
+            /*background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.18);*/
+            /*background: none repeat scroll 0% 0% rgba(200, 200, 200, 0.18);*/
+            background-color: grey;
+            border-radius: 8px;
+        }
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        a:link, a:visited {
+            text-decoration: none;
+            color: blue;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: rgb(255,0,255);
+        }
+    -->
+    </style>
+
+</head>
+<body>
+    <div class="login_form center" style="width:300px;margin-top:180px;">
+        <form class="pure-form pure-form-stacked">
+            <fieldset>
+                <legend style="text-align: center; font-size: 18px;"><b>登陆</b></legend>
+
+                <label for="email">用户名：</label>
+                <input id="usr" name="usr" type="text" class="pure-input-1" placeholder="请输入用户名">
+
+                <label for="password">密码：</label>
+                <input id="passwd" name="passwd" type="password" class="pure-input-1" placeholder="请输入密码">
+
+                <label for="remember" class="pure-checkbox">
+                    <input id="remember" name="remember" type="checkbox"> 记住我
+                </label>
+
+                <button type="submit" class="pure-button pure-button-primary">登录</button>
+                <a href="/" style="float: right; padding-top: 6px;"> 返回主页</a>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

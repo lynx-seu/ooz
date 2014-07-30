@@ -1,0 +1,3 @@
+layout几个必须的变量
+{{.Title}}
+{{.IsLogin}}
